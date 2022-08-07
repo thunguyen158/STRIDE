@@ -9,8 +9,7 @@ chains:
         value:
             key: gaia
             chain-id: GAIA
-            rpc-addr: http://185.249.225.35:23657
-            grpc-addr: http://185.249.225.35:23661
+            rpc-addr: http://185.249.225.35:23657           
             account-prefix: cosmos
             keyring-backend: test
             gas-adjustment: 1.2
@@ -25,7 +24,7 @@ chains:
         value:
             key: stride
             chain-id: STRIDE-TESTNET-2
-            rpc-addr: http://localhost:16657
+            rpc-addr: http://localhost:20657
             account-prefix: stride
             keyring-backend: test
             gas-adjustment: 1.2
@@ -38,11 +37,11 @@ chains:
 paths:
     PATH-STRIDE-GAIA:
         src:
-            chain-id: STRIDE-TESTNET-2
+            chain-id: GAIA
             client-id: 07-tendermint-0
             connection-id: connection-0
         dst:
-            chain-id: GAIA
+            chain-id: STRIDE-TESTNET-2
             client-id: 07-tendermint-0
             connection-id: connection-0
         src-channel-filter:
