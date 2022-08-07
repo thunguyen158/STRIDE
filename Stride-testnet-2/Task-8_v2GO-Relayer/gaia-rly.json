@@ -1,7 +1,7 @@
 {
   "type": "cosmos",
   "value": {
-    "key": "default",
+    "key": "gaia",
     "chain-id": "GAIA",
     "rpc-addr": "http://185.249.225.35:23657",    
     "account-prefix": "cosmos",
